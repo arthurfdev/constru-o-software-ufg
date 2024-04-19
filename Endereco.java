@@ -6,6 +6,7 @@ public class Endereco {
     private Integer numero;
     private String complemento;
     private Integer cep;
+    private TipoEndereco tipoEndereco;
 
     public void addLogradouro(Logradouro logradouro) {
         logradouros.add(logradouro);
@@ -41,5 +42,13 @@ public class Endereco {
 
     public void setCep(Integer cep) {
         this.cep = cep;
+    }
+    
+    public TipoEndereco getTipoEndereco() {
+        return tipoEndereco;
+    }
+
+    public void setTipoEndereco(TipoEndereco tipoEndereco) {
+        this.tipoEndereco = tipoEndereco;
     }
 }
