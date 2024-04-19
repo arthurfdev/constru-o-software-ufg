@@ -7,6 +7,9 @@ public class Endereco {
     private String complemento;
     private Integer cep;
     private TipoEndereco tipoEndereco;
+    private Bairro bairro;
+    private PessoaFisica pessoaFisica;
+    private Logradouro logradouro;
 
     public void addLogradouro(Logradouro logradouro) {
         logradouros.add(logradouro);
@@ -43,12 +46,36 @@ public class Endereco {
     public void setCep(Integer cep) {
         this.cep = cep;
     }
-    
+
     public TipoEndereco getTipoEndereco() {
         return tipoEndereco;
     }
 
     public void setTipoEndereco(TipoEndereco tipoEndereco) {
         this.tipoEndereco = tipoEndereco;
+    }
+
+    public Bairro getBairro() {
+        return bairro;
+    }
+
+    public void setBairro(Bairro bairro) {
+        this.bairro = bairro;
+    }
+
+    public PessoaFisica getPessoaFisica(){
+        return pessoaFisica;
+    }
+
+    public void setPessoaFisica(PessoaFisica pessoaFisica){
+        this.pessoaFisica = pessoaFisica;
+    }
+
+    public Logradouro getLogradouro(){
+        return logradouro;
+    }
+
+    public void setLogradouro(Logradouro logradouro){
+        this.logradouro = logradouro;
     }
 }
