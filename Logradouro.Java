@@ -1,17 +1,3 @@
-public enum TipoLogradouro {
-    ALAMEDA,
-    AVENIDA,
-    MARGINAL,
-    RUA,
-    RODOVIA,
-    VIA,
-    VIELA,
-    TRAVESSA;
-
-    private TipoLogradouro() {
-    }
-}
-
 public class Logradouro {
     private String nome;
     private TipoLogradouro tipoLogradouro;
